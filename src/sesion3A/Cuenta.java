@@ -18,4 +18,8 @@ public class Cuenta {
     	return saldo;
     }
 
+    public void retirar(double x)
+    {
+    	
+    }
 }

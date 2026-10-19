@@ -14,7 +14,7 @@ class CuentaTest {
 
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
-		cuenta = new Cuenta();
+		
 	}
 
 	@AfterAll
@@ -23,6 +23,7 @@ class CuentaTest {
 
 	@BeforeEach
 	void setUp() throws Exception {
+		cuenta = new Cuenta();
 	}
 
 	@AfterEach
@@ -37,7 +38,8 @@ class CuentaTest {
 	
 	@Test
 	void testRetiar() {
-		fail("Not yet implemented");
+		cuenta.retirar(500);
+		assertEquals(0, cuenta.getSaldo());
 	}
 
 }
