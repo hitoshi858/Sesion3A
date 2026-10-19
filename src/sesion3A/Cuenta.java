@@ -20,6 +20,6 @@ public class Cuenta {
 
     public void retirar(double x)
     {
-    	
+    	saldo=-x;
     }
 }
