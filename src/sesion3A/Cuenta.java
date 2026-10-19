@@ -7,6 +7,14 @@ public class Cuenta {
     String nTitular; 
     List <Movimiento> mMovimientos;
     
+    public void ingresar(double x)
+    {
+    	
+    }
     
+    public double getSaldo()
+    {
+    	return 0;
+    }
 
 }

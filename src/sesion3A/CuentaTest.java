@@ -9,12 +9,12 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 class CuentaTest {
-	Cuenta c;
+	static Cuenta cuenta;
 	
 
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
-		c = new Cuenta();
+		cuenta = new Cuenta();
 	}
 
 	@AfterAll
@@ -31,8 +31,8 @@ class CuentaTest {
 
 	@Test
 	void testIngresar() {
-		c.ingresar(500)
-		assertEquals(500, c.getSaldo());
+		cuenta.ingresar(500);
+		assertEquals(500, cuenta.getSaldo());
 	}
 	
 	@Test
